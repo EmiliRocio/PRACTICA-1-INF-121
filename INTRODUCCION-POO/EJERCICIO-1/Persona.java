@@ -1,6 +1,6 @@
 // INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS EN JAVA
 
-// Definición de la clase Persona
+
 class Persona {
     // Atributos de la clase
     String nombre;
