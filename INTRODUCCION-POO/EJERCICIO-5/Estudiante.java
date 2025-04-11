@@ -1,32 +1,34 @@
 // INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS EN JAVA
+//Crea una clase Estudiante con nombre, nota_1, nota_2
+//a) Agrega un método para calcular el promedio
+//b) Agrega un método para verificar si aprobó (promedio >=6)
+//c) Crea tres estudiantes, muestra sus promedios y si aprobaron
 
-// Definición de la clase Estudiante
 class Estudiante {
-    // Atributos de la clase
+    
     String nombre;
     double nota1;
     double nota2;
 
-    // Constructor de la clase
     public Estudiante(String nombre, double nota1, double nota2) {
         this.nombre = nombre;
         this.nota1 = nota1;
         this.nota2 = nota2;
     }
 
-    // Método para calcular el promedio
+    
     public double calcularPromedio() {
         return (this.nota1 + this.nota2) / 2;
     }
 
-    // Método para verificar si aprobó (promedio >= 6)
+    
     public boolean aprobo() {
         return this.calcularPromedio() >= 6;
     }
 
-    // Método principal (main) para probar la clase
+    
     public static void main(String[] args) {
-        // Crear tres objetos de la clase Estudiante
+        
         Estudiante estudiante1 = new Estudiante("Juan", 7, 8);
         Estudiante estudiante2 = new Estudiante("Ana", 5, 6);
         Estudiante estudiante3 = new Estudiante("Carlos", 4, 5);

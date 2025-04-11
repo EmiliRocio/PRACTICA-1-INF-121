@@ -3,15 +3,15 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Definición de la clase Celular
- public class Celular {
-    // Atributos de la clase
-    private int espacioTotal = 1024;  // Espacio total en MB
-    private int espacioOcupado = 0;   // Espacio ocupado en MB
-    private double bateria = 100;     // Batería inicial en 100%
-    private List<Aplicacion> aplicaciones = new ArrayList<>();  // Lista de aplicaciones
 
-    // Clase interna para representar una aplicación
+ public class Celular {
+    
+    private int espacioTotal = 1024;  
+    private int espacioOcupado = 0;   
+    private double bateria = 100;     
+    private List<Aplicacion> aplicaciones = new ArrayList<>();  
+
+    
     private class Aplicacion {
         String nombre;
         int tamaño;
@@ -22,7 +22,7 @@ import java.util.List;
         }
     }
 
-    // Método para instalar una nueva aplicación
+
     public void instalarAplicacion(String nombre, int tamaño) {
         if (espacioOcupado + tamaño <= espacioTotal) {
             aplicaciones.add(new Aplicacion(nombre, tamaño));
@@ -33,7 +33,7 @@ import java.util.List;
         }
     }
 
-    // Método para utilizar una aplicación
+    
     public void usarAplicacion(String nombre, int minutos) {
         if (bateria <= 0) {
             System.out.println("Celular apagado. No se puede usar ninguna aplicación.");
@@ -69,7 +69,7 @@ import java.util.List;
         System.out.printf("Batería restante: %.2f%%\n", bateria);
     }
 
-    // Método principal (main) para probar la clase
+
     public static void main(String[] args) {
         Celular miCelular = new Celular();
 

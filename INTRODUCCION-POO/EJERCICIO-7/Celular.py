@@ -1,15 +1,15 @@
 # INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS EN PYTHON
 
-# Definición de la clase Celular
-class Celular:
-    # Constructor de la clase
-    def __init__(self):
-        self.espacio_total = 1024  # Espacio total en MB
-        self.espacio_ocupado = 0   # Espacio ocupado en MB
-        self.bateria = 100         # Batería inicial en 100%
-        self.aplicaciones = []     # Lista de aplicaciones instaladas
 
-    # Método para instalar una nueva aplicación
+class Celular:
+    
+    def __init__(self):
+        self.espacio_total = 1024 
+        self.espacio_ocupado = 0   
+        self.bateria = 100         
+        self.aplicaciones = []     
+
+    
     def instalar_aplicacion(self, nombre, tamaño):
         if self.espacio_ocupado + tamaño <= self.espacio_total:
             self.aplicaciones.append({"nombre": nombre, "tamaño": tamaño})
@@ -18,7 +18,7 @@ class Celular:
         else:
             print(f"No hay suficiente espacio para instalar '{nombre}'.")
 
-    # Método para utilizar una aplicación
+    
     def usar_aplicacion(self, nombre, minutos):
         if self.bateria <= 0:
             print("Celular apagado. No se puede usar ninguna aplicación.")
@@ -48,7 +48,7 @@ class Celular:
         print(f"Batería restante: {self.bateria:.2f}%")
 
 
-# Crear un objeto de la clase Celular
+
 mi_celular = Celular()
 
 # Instalar aplicaciones

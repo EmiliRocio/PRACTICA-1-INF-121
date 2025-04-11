@@ -1,16 +1,16 @@
 # INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS EN PYTHON
 
-# Definición de la clase Computadora
-class Computadora:
-    # Constructor de la clase
-    def __init__(self, marca, cpu, ram, almacenamiento):
-        self.marca = marca            # Atributo: marca de la computadora
-        self.cpu = cpu                # Atributo: CPU de la computadora
-        self.ram = ram                # Atributo: RAM de la computadora
-        self.almacenamiento = almacenamiento  # Atributo: almacenamiento de la computadora
-        self.encendida = False        # Atributo: estado de la computadora (apagada por defecto)
 
-    # Método para mostrar los componentes principales
+class Computadora:
+    
+    def __init__(self, marca, cpu, ram, almacenamiento):
+        self.marca = marca            
+        self.cpu = cpu              
+        self.ram = ram                
+        self.almacenamiento = almacenamiento  
+        self.encendida = False       
+
+    
     def mostrar_componentes(self):
         print(f"Componentes de la computadora {self.marca}:")
         print(f"CPU: {self.cpu}")
@@ -42,7 +42,6 @@ class Computadora:
 # Crear una instancia de la clase Computadora
 mi_computadora = Computadora("Dell", "Intel i7", 16, 512)
 
-# Mostrar los componentes principales
 mi_computadora.mostrar_componentes()
 
 # Simular encender y apagar la computadora

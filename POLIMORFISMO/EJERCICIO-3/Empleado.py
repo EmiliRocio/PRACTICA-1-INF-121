@@ -1,3 +1,6 @@
+#a) Instanciar 1 Cocinero, 2 objetos Mesero y 2 objetos Administrativo.
+#b) Sobrecargar el método SueldoTotal para mostrar el sueldo total,sumándole las horas extra, considerando el sueldo por hora y la propina en caso de los meseros.
+#c) Sobrecargar el método para mostrar a aquellos Empleados que tengan SueldoMes igual a X.
 from abc import ABC, abstractmethod
 
 class Empleado(ABC):
